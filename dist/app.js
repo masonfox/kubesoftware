@@ -77,9 +77,24 @@ module.exports = __webpack_require__(6);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap__ = __webpack_require__(2);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_bootstrap__);
 
+
+$('.toggle-menu').on('click', function () {
+  $('#form').removeClass('show');
+
+  $('#menu').toggleClass('show');
+  $('body').toggleClass('no-scroll');
+});
+
+$('.toggle-form').on('click', function () {
+  $('#menu').removeClass('show');
+
+  $('#form').toggleClass('show');
+  $('body').toggleClass('no-scroll');
+});
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3)))
 
 /***/ }),
 /* 2 */

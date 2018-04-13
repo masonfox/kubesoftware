@@ -1,0 +1,25 @@
+.section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: -9999999999px; left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.9);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 300ms ease;
+  padding: 6rem 2rem;
+  
+  &.show {
+    top: 0;
+    opacity: 1;
+  }
+}
