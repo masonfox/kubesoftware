@@ -1,4 +1,4 @@
-import 'bootstrap'
+// import 'bootstrap'
 
 $('.toggle-menu').on('click', function() {
   $('#form').removeClass('show')
