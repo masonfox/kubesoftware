@@ -1,15 +1,17 @@
 // import 'bootstrap'
 
-$('.toggle-menu').on('click', function() {
-  $('#form').removeClass('show')
+// Lame jQuery event driven stuff
+$(() => {
   
-  $('#menu').toggleClass('show')
-  $('body').toggleClass('no-scroll')
-})
-
-$('.toggle-form').on('click', function() {
-  $('#menu').removeClass('show')
-  
-  $('#form').toggleClass('show')
-  $('body').toggleClass('no-scroll')
+  // shrink nav after landing watcher
+  $(window).on('scroll', (e) => {
+    let landingHeight = $('.landing').height()
+    let currentHeight = $(document).scrollTop()
+    
+    if (currentHeight > landingHeight) {
+      $('.main-nav').addClass('shrink')
+    } else {
+      $('.main-nav').removeClass('shrink')
+    }
+  })
 })

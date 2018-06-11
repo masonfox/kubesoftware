@@ -1,0 +1,21 @@
+.about-content {
+  
+  h4 {
+    font-weight: 500;
+    text-align: right;
+    
+    @include media-breakpoint-down(md) {
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  .column-layout {
+    column-count: 2;
+    column-gap: 25px;
+    
+    @include media-breakpoint-down(md) {
+      column-count: 1;
+    }
+  }
+}

@@ -3,9 +3,10 @@ $primary: #505cfd; // #5CDB94
 $brand-secondary: #40697F;
 $gray: #404040;
 $gray-200: #e9ecef;
+$gray-800: $gray;
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Bitter|Open+Sans|Poppins');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins:300,400,500');
 
 $font: 'Poppins';
 $font-second: 'Open Sans';
@@ -14,3 +15,5 @@ $font-second: 'Open Sans';
 $border-width: 1px;
 $border-color: $gray-200;
 $border: $border-width solid $border-color;
+
+$transition: 300ms ease;

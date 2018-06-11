@@ -1,8 +1,36 @@
-header.main-header {
-  height: calc(100vh - 8.5rem);
-  // margin-top: 4.5rem;
+.landing {
+  height: calc(100vh - 10rem);
+  margin-top: 3.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: $border;
+  background: $gray-100;
+  
+  h1 {
+    color: $gray-800;
+    font-weight: 300;
+    line-height: 1.25;
+  }
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4.5rem;
+  display: block;
+  
+  p {
+    color: $gray-600;
+  }
+  
+  &:after {
+    content: '';
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.5rem;
+    height: 2px;
+    width: 5rem;
+    background: $gray-200;
+  }
 }

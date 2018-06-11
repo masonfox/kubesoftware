@@ -1,0 +1,24 @@
+.services {
+  justify-content: center;
+  margin-top: 7rem;
+  
+  .service-item-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .service-item {
+    background: $gray-200;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    
+    i {
+      font-size: 2rem;
+      transform: rotate(-45deg);
+    }
+  }
+}
