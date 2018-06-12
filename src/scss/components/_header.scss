@@ -5,16 +5,15 @@
   align-items: center;
   justify-content: center;
   background: $gray-100;
-  
+
   h1 {
     color: $gray-800;
     font-weight: 300;
     line-height: 1.25;
   }
-  
+
   @media (min-width: 1400px) {
     height: calc(60vh - 10rem);
-    background: blue;
   }
 }
 
@@ -22,11 +21,11 @@
   text-align: center;
   margin-bottom: 4.5rem;
   display: block;
-  
+
   p {
     color: $gray-600;
   }
-  
+
   &:after {
     content: '';
     display: block;
