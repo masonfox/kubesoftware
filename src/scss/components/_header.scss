@@ -11,6 +11,11 @@
     font-weight: 300;
     line-height: 1.25;
   }
+  
+  @media (min-width: 1400px) {
+    height: calc(60vh - 10rem);
+    background: blue;
+  }
 }
 
 .section-header {

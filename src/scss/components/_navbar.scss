@@ -27,6 +27,12 @@
     .logo {
       font-size: 1.75rem;
     }
+    
+    @include media-breakpoint-down(sm) {
+      .nav-right {
+        transform: translateY(3.25rem) !important;
+      }
+    }
   }
   
   .logo {
@@ -34,16 +40,37 @@
   }
   
   .container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    
+    .menu-toggle {
+      display: none;
+      font-variant: small-caps;
+      letter-spacing: 3px;
+      color: $gray-700;
+      font-size: 1.25rem;
+      
+      @include media-breakpoint-down(sm) {
+        display: flex;
+      }
+      
+      &.active {
+        color: $primary;
+      }
+    }
     
     .nav-right {
+      transition: 500ms ease;
+      
       a {
         color: $gray-600;
         font-weight: 300;
         position: relative;
         z-index: 100;
+        transition: 500ms ease;
         
         &:after {
           content: '';
@@ -58,6 +85,10 @@
           transform: translateY(5px);
           transition: $transition;
           z-index: 1;
+          
+          @include media-breakpoint-down(sm) {
+            display: none;
+          }
         }
         
         &:hover {
@@ -71,6 +102,30 @@
         
         &:not(:last-of-type) {
           margin-right: 2.5rem;
+        }
+      }
+      
+      @include media-breakpoint-down(sm) {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(5rem);
+        background: $gray-200;
+        padding: 2rem 1rem 1rem 1rem;
+        flex-direction: column;
+        width: 100%;
+        
+        a {
+          text-align: center;
+          font-size: 1.25rem;
+          margin-bottom: 1rem;
+          margin-right: 0 !important;
+          
+        }
+        
+        &.active {
+          display: flex;
         }
       }
     }
