@@ -1,5 +1,7 @@
 // import 'bootstrap'
 
+feather.replace();
+
 // Lame jQuery event driven stuff
 $(function () {
   

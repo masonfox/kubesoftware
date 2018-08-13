@@ -6,7 +6,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Kube Software</title>
     <link rel="stylesheet" href="dist/app.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     
@@ -18,9 +17,9 @@
         </div>
         <a href="javascript:void(0)" class="menu-toggle">menu</a>
         <nav class="nav-right">
-          <a href="#about">About Us</a>
+          <a href="#about">About</a>
           <a href="#services">Services</a>
-          <a href="#work">Work</a>
+          <!-- <a href="#work">Work</a> -->
           <!-- <a href="#blog">Blog</a> -->
           <a href="#contact" class="text-primary">Contact</a>
         </nav>
@@ -49,7 +48,7 @@
       
       <div class="row about-content">
         <div class="col-12 col-md-4">
-          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+          <h4>We're a software development agency based in Bryan, OH specializing in web and mobile applications and API integrations.</h4>
         </div>
         <div class="col-12 col-md-8 column-layout">
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -68,35 +67,47 @@
         <!-- service list -->
         <div class="row services">
           <div class="col-12 col-md-6 col-lg-2 service-item-wrapper">
-            <span class="service-item">
-              <i class="material-icons">face</i>
+            <span class="service-icon">
+              <i data-feather="monitor"></i>
             </span>
+            <div class="service-body">
+              <h5>Web Apps</h5>
+            </div>
           </div>
           <div class="col-12 col-md-6 col-lg-2 service-item-wrapper">
-            <span class="service-item">
-              <i class="material-icons">favorite</i>
+            <span class="service-icon">
+              <i data-feather="smartphone"></i>
             </span>
+            <div class="service-body">
+              <h5>Mobile Apps</h5>
+            </div>
           </div>
           <div class="col-12 col-md-6 col-lg-2 service-item-wrapper">
-            <span class="service-item">
-              <i class="material-icons">pets</i>
-            </span>
-          </div>
+              <span class="service-icon">
+                <i data-feather="search"></i>
+              </span>
+              <div class="service-body">
+                <h5>Consulting</h5>
+              </div>
+            </div>
           <div class="col-12 col-md-6 col-lg-2 service-item-wrapper">
-            <span class="service-item">
-              <i class="material-icons">verified_user</i>
+            <span class="service-icon">
+              <i data-feather="layers"></i>
             </span>
+            <div class="service-body">
+              <h5>API's</h5>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- work -->
-    <section class="container section" id="work">
+    <!-- <section class="container section" id="work">
       <div class="section-header">
         <h1>Work</h1>
       </div>
-    </section>
+    </section> -->
 
     <!-- blog snippet -->
     <!-- <section class="container section" id="blog">
@@ -110,8 +121,29 @@
         <h1>Contact</h1>
         <p>Let's build something amazing together!</p>
       </div>
+      <div class="row">
+        <form class="form col-md-6 offset-md-3 contact-form" action="https://formspree.io/masonfox22@gmail.com" method="POST">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="Name" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="Email" class="form-control">
+            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label>Project Description</label>
+            <textarea class="form-control" name="Description" rows="5"></textarea>
+          </div>
+          <div class="d-block mt-4 text-center">
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </div>
+        </form>
+      </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="dist/app.js"></script>
   </body>
 </html>
